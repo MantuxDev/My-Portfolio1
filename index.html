@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="it">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mantu</title>
+        <meta name="author" content="Raffaele Pio Mantuano">
+        <link rel="icon" href="img/logoNoScritta.png">
+
+        <!-- CSS-->
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="nav">
+            <h1>mantu</h1>
+
+            <!-- Hamburger menu -->
+            <button class="hamburger">
+                &#9776;
+            </button>
+
+
+            <ul class="link">
+                <li class="nav-item">
+                    <a href="#chiSono" class="nav-link">Chi sono</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Progetti</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Graphic</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contatti</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="home">
+
+            <div class="info">
+                <h1>Developer & Graphic Designer</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi provident quisquam in expedita iste, natus laborum quas recusandae quo, earum explicabo non mollitia sint, quia eius perferendis qui voluptatem consequuntur.</p>
+            </div>
+
+            <img src="img/io.png" alt="io">
+        </section>
+
+        <section class="chiSono" id="chiSono">
+            <h1>Chi sono?</h1>
+            <p>
+                Ciao, sono Raffaele.
+                Mi appassionano la tecnologia e la creatività in tutte le loro forme: sviluppo software, web e design grafico.
+                Mi piace imparare, sperimentare e trasformare idee in progetti concreti che possano comunicare qualcosa o risolvere un problema.
+            </p>
+
+            <h2>Obiettivi</h2>
+            <p>
+                Voglio crescere come sviluppatore e come designer, costruendo un profilo versatile.
+                Mi interessa approfondire sia lo sviluppo web che quello software (Java, C++ e altre tecnologie), senza perdere il lato creativo legato alla grafica, ai poster e al branding.
+                L’obiettivo, nel tempo, è lavorare su progetti sempre più completi, dove tecnica e design convivono.
+            </p>
+            
+            <h2>Il mio percorso</h2>
+            <p>
+                Sto completando gli studi e continuo a formarmi anche in modo autonomo.
+                Ho iniziato dal web, imparando HTML e CSS, ma ho ampliato presto il mio percorso verso lo sviluppo software (Java, C++ e altri linguaggi che sto esplorando).
+                Parallelamente ho sviluppato interesse per la grafica: ho realizzato poster, loghi e piccoli progetti di branding, cercando sempre di curare composizione, colore e coerenza visiva.
+                Ogni progetto — tecnico o grafico — è stato un’occasione per migliorare metodo e capacità.
+            </p>
+
+            <h2>Le mie passioni</h2>
+            <p>
+                Mi piace lavorare su progetti diversi: programmi, siti web, interfacce, poster e identità visive.
+                Sono affascinato da come codice e design possano collaborare: uno rende possibile la funzionalità, l’altro la rende chiara e coinvolgente.
+                Nel tempo libero studio nuovi strumenti, guardo progetti di altri creativi e provo a sperimentare con idee mie.
+            </p>
+            
+        </section>
+
+
+
+
+
+
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.link');
+            const linkItems = document.querySelectorAll('.nav-link');
+        
+            // Toggle menu quando clicchi sull'hamburger
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        
+            // Chiudi il menu quando clicchi su una voce
+            linkItems.forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
+            });
+        </script>
+
+    </body>
+</html>
