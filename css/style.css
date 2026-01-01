@@ -79,7 +79,7 @@ body {
         gap: 15px;
         width: 100%;
         text-align: center;
-        background-color: white; /* sfondo menu */
+        background-color: rgba(255,255,255,.95); /* sfondo menu */
         position: absolute;
         top: 100%; /* sotto la navbar */
         left: 0;
@@ -166,29 +166,90 @@ section{
     padding-right: 120px;
 }
 
-.chiSono h1,h2,p{
+.info{
+    display: flex;
+    margin: 25px;
+}
+
+.chiSono .info{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.chiSono .image img{
+    height: 220px;
+    margin: 0;
+    border-radius: 20%;
+}
+
+.chiSono .text{
+    display: flex;
+    flex-direction: column;    
+}
+
+.image img{
+    height: 250px;
+    margin-left: auto;
+    border-radius: 20%;
+    margin-right: 25px;
+}
+
+.badges{
+    margin-top: 18px;
+}
+
+.badge{
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(255,255,255,.14);
+    border: 1px solid rgba(255,255,255,.35);
+    margin-right: 6px;
+    margin-top: 6px;
+    font-size: 15px;
     color: white;
 }
 
-.chiSono h2{
-    margin-top: 50px;
+.chiSono h1 {
+    font-size: 52px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    color: white;
 }
 
-.chiSono p{
+.chiSono p {
+    color: rgba(255,255,255,.85);
+    line-height: 1.6;
     margin-top: 15px;
-}
-
-.chiSono h1{
-    font-size: xxx-large;
+    font-size: 18px;
 }
 
 .chiSono h2{
-    font-size: xx-large;
+    color: white;
+    font-size: 30px;
 }
 
-.chiSono p{
-    font-size: large;
+.container{
+    display: flex;
+    margin-top: 25px;
 }
+
+.card-chiSono{
+    margin:25px;
+    flex: 1;
+    border: solid 1px rgba(255,255,255,.35);
+    background-color: rgba(255,255,255,.15);
+    padding: 25px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.card-chiSono:hover{
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 15px 30px rgba(0,0,0,.18);
+}
+
 
 @media (max-width: 768px){
     .chiSono{
@@ -196,6 +257,19 @@ section{
         flex-direction: column;
         padding-left: 50px;
         padding-right: 50px;
+    }
+
+    .info{
+        flex-direction: column;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .badge{
+        margin: 0;
+        margin-bottom:25px;
     }
 
 }
