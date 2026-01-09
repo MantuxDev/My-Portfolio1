@@ -76,7 +76,7 @@ li{
     border-radius: 25px;
     width: 95%;
     height: auto;
-    margin-top: 10px;
+    margin-top: 20px;
 
     justify-content: center;
     align-content: center;
@@ -89,6 +89,11 @@ li{
     margin-top: 15px;
     font-size: 20px;
     color: var(--ceruleo);
+}
+
+a{
+    color: var(--ceruleo);
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {

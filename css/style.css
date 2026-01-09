@@ -90,10 +90,12 @@ body {
 
     .link.active {
         display: flex;
+        margin: 0;
     }
 
     .hamburger {
         display: block; /* visibile solo su mobile */
+        margin: 0;
     }
 }
 
